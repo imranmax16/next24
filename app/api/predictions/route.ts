@@ -1,0 +1,3 @@
+import pg from"pg";import{generateDailyPrediction}from"../../../packages/predictions/src/index";
+export const runtime="nodejs";const pool=()=>{const url=process.env.DATABASE_URL;if(!url)throw new Error("DATABASE_URL missing");return new pg.Pool({connectionString:url,ssl:/supabase\.co/i.test(url)?{rejectUnauthorized:false}:undefined,max:1})};
+export async function GET(){const db=pool();try{await generateDailyPrediction(db);const result=await db.query(`SELECT * FROM daily_predictions ORDER BY prediction_date DESC LIMIT 30`);return Response.json({predictions:result.rows})}catch(error){return Response.json({predictions:[],error:error instanceof Error?error.message:"Prediction error"},{status:500})}finally{await db.end()}}

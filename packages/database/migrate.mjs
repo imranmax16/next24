@@ -1,0 +1,2 @@
+import fs from"node:fs/promises";import pg from"pg";
+const url=process.env.DATABASE_URL;if(!url)throw new Error("DATABASE_URL is required");const client=new pg.Client({connectionString:url,ssl:/supabase\.co/i.test(url)?{rejectUnauthorized:false}:undefined});await client.connect();try{for(const name of["0001_initial.sql","0002_x_publications.sql","0003_daily_predictions.sql","0004_prediction_analysis.sql"]){const sql=await fs.readFile(new URL(`./migrations/${name}`,import.meta.url),"utf8");await client.query(sql);console.log(`applied ${name}`)}}finally{await client.end()}

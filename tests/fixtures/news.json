@@ -1,0 +1,4 @@
+[
+  {"externalId":"r-1001","title":"İran, ABD ile teknik görüşmelerin yeniden başlayacağını açıkladı","summary":"Yetkili açıklaması","url":"https://example.test/reuters/iran-talks?utm_source=feed","publishedAt":"2026-08-14T11:32:08Z","language":"tr","raw":{"fixture":"reuters-breaking"}},
+  {"externalId":"r-1002","title":"Malatya'da 4,7 büyüklüğünde deprem meydana geldi","summary":"AFAD verisi","url":"https://example.test/afad/earthquake","publishedAt":"2026-08-14T11:31:44Z","language":"tr","raw":{"fixture":"official-earthquake"}}
+]
