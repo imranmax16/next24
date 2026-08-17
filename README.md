@@ -1,4 +1,4 @@
-# Nabız — Gerçek Zamanlı Türkçe Haber Merkezi
+# NEXT24 — Gerçek Zamanlı Türkçe Haber Merkezi
 
 Nabız, yetkili makine-okunur haber kaynaklarını düşük gecikmeyle izleyen; haberleri normalize eden, kümelendiren, doğrulayan, profesyonel Türkçe gönderiye dönüştüren ve editoryal kurallardan sonra X'e yayımlayan modüler bir newsroom platformudur. Bu depo ilk çalışan kilometre taşını içerir ve varsayılan olarak **demo + dry-run + hibrit** modda güvenle açılır.
 
